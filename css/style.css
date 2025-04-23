@@ -1,0 +1,100 @@
+
+/* ===== Global Reset & Base Setup ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Open Sans', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1, h2, h3 {
+  color: #0d3b66;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  border-bottom: 2px solid #cce5ff;
+  padding-bottom: 4px;
+}
+
+p {
+  margin-bottom: 1em;
+  font-size: 1rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: #1d7874;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px 0;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: #155e59;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.navbar {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ccc;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #1d7874;
+  margin-right: 15px;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: #0d3b66;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .container {
+    padding: 20px 10px;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 8px 0;
+  }
+}
